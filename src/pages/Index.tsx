@@ -7,50 +7,56 @@ const Index = () => {
     <div className="min-h-screen bg-[#0a0a0a] text-white">
       <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 fade-in">
         <div className="max-w-6xl w-full">
-          <div className="text-center space-y-12">
-            <div className="space-y-6">
-              <h1 className="text-7xl sm:text-9xl font-black tracking-tighter">
-                BUSHIDO ZHO
-              </h1>
-              <div className="flex items-center justify-center gap-4 text-[#f4a584] text-sm font-medium tracking-widest">
-                <div className="h-px w-16 bg-[#f4a584]"></div>
-                <span>SWEET AND TEARZ TOUR</span>
-                <div className="h-px w-16 bg-[#f4a584]"></div>
-              </div>
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="w-full lg:w-1/2">
+              <img 
+                src="https://cdn.poehali.dev/projects/26a8aaad-89b9-4f7f-9ec4-fc8010367fdc/bucket/5150a847-fb6a-4650-8e63-43d004f1cd13.png" 
+                alt="Bushido Zho 2026"
+                className="w-full h-auto rounded-sm shadow-2xl"
+              />
             </div>
+            
+            <div className="w-full lg:w-1/2 space-y-8">
+              <div className="space-y-4">
+                <div className="text-[#f4a584] text-sm font-medium tracking-widest">SWEET & TEARZ TOUR 2026</div>
+                <h1 className="text-6xl sm:text-7xl font-black tracking-tighter">
+                  BUSHIDO ZHO
+                </h1>
+              </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 py-12 border-y border-white/10">
-              <div className="space-y-2">
-                <div className="text-6xl sm:text-7xl font-black text-[#f4a584]">07</div>
-                <div className="text-sm tracking-wider text-white/60">МАРТА</div>
+              <div className="space-y-6 border-l-4 border-[#f4a584] pl-6">
+                <div>
+                  <div className="text-white/60 text-sm mb-1">Дата и время</div>
+                  <div className="text-2xl font-bold">Пятница, 20 марта, 20:00</div>
+                </div>
+                <div>
+                  <div className="text-white/60 text-sm mb-1">Место проведения</div>
+                  <div className="text-2xl font-bold">Korston, Казань</div>
+                </div>
+                <div>
+                  <div className="text-white/60 text-sm mb-1">Стоимость билетов</div>
+                  <div className="text-xl font-medium">от 1 499 ₽ • VIP от 2 499 ₽</div>
+                </div>
               </div>
-              <div className="space-y-2">
-                <div className="text-2xl sm:text-3xl font-bold">КАЗАНЬ</div>
-                <div className="text-sm tracking-wider text-white/60">LOONA</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-2xl sm:text-3xl font-bold">20:00</div>
-                <div className="text-sm tracking-wider text-white/60">НАЧАЛО</div>
-              </div>
-            </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button 
-                size="lg"
-                className="bg-[#f4a584] hover:bg-[#f4a584]/90 text-black font-bold text-base px-12 py-6 rounded-none tracking-wider transition-all hover:scale-105"
-                onClick={() => window.open('https://kazan.qtickets.events/169263-bushido-zho', '_blank')}
-              >
-                КУПИТЬ БИЛЕТ →
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="border-white/20 hover:bg-white/5 text-white font-medium text-base px-8 py-6 rounded-none tracking-wider transition-all hover:scale-105"
-                onClick={() => window.open('https://t.me/bushidozhokazan', '_blank')}
-              >
-                <Icon name="Send" size={20} className="mr-2" />
-                TELEGRAM
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  size="lg"
+                  className="bg-[#f4a584] hover:bg-[#f4a584]/90 text-black font-bold text-base px-12 py-6 rounded-none tracking-wider transition-all hover:scale-105"
+                  onClick={() => window.open('https://kazan.qtickets.events/169263-bushido-zho', '_blank')}
+                >
+                  КУПИТЬ БИЛЕТ →
+                </Button>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-white/20 hover:bg-white/5 text-white font-medium text-base px-8 py-6 rounded-none tracking-wider transition-all hover:scale-105"
+                  onClick={() => window.open('https://t.me/bushidozhokazan', '_blank')}
+                >
+                  <Icon name="Send" size={20} className="mr-2" />
+                  TELEGRAM
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -84,14 +90,14 @@ const Index = () => {
               <div className="bg-white/5 border border-white/10 p-8 hover:border-[#f4a584]/50 transition-all">
                 <div className="space-y-4">
                   <div className="text-sm tracking-wider text-[#f4a584]">СТАНДАРТ</div>
-                  <div className="text-3xl font-bold">от 2 500 ₽</div>
+                  <div className="text-3xl font-bold">от 1 499 ₽</div>
                   <p className="text-sm text-white/60">Танцпол, стандартное место</p>
                 </div>
               </div>
               <div className="bg-white/5 border border-white/10 p-8 hover:border-[#f4a584]/50 transition-all">
                 <div className="space-y-4">
                   <div className="text-sm tracking-wider text-[#f4a584]">VIP</div>
-                  <div className="text-3xl font-bold">от 4 000 ₽</div>
+                  <div className="text-3xl font-bold">от 2 499 ₽</div>
                   <p className="text-sm text-white/60">VIP-зона, лучший вид</p>
                 </div>
               </div>
@@ -118,7 +124,7 @@ const Index = () => {
                 Когда состоится концерт?
               </AccordionTrigger>
               <AccordionContent className="text-white/70 text-base">
-                Концерт состоится 7 марта 2026 года в клубе LOONA, Казань.
+                Концерт состоится в пятницу, 20 марта 2026 года в Korston, Казань.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" className="border border-white/10 px-6 bg-white/5">
@@ -156,7 +162,7 @@ const Index = () => {
               <h3 className="text-2xl font-bold">СЛЕДИ ЗА НОВОСТЯМИ</h3>
               <p className="text-white/60">Официальный канал концерта в Telegram</p>
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-4">
               <Button 
                 size="lg"
                 variant="outline"
@@ -170,10 +176,10 @@ const Index = () => {
                 size="lg"
                 variant="outline"
                 className="border-white/20 hover:bg-white/5 text-white font-medium px-8 py-6 rounded-none tracking-wider transition-all hover:scale-105"
-                onClick={() => window.open('https://kazan.qtickets.events/169263-bushido-zho', '_blank')}
+                onClick={() => window.open('https://bushidozho.com', '_blank')}
               >
-                <Icon name="Ticket" size={20} className="mr-2" />
-                QTICKETS
+                <Icon name="Globe" size={20} className="mr-2" />
+                BUSHIDOZHO.COM
               </Button>
             </div>
             <div className="text-white/40 text-sm pt-8">
